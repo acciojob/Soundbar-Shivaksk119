@@ -5,7 +5,7 @@ let buttons = document.querySelectorAll('.btn');
 buttons.forEach((button)=>{
 	button.addEventListener('click',()=>{
 		let track = button.innerText;
-		let audio = new Audio(`./sounds/${track}`);
+		let audio = new Audio(`./sounds/${track}.mp3`);
 		audio.play();
 	})
 })
